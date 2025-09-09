@@ -2,8 +2,8 @@
 
 # STDIN   Function
 # -----   --------
-# 10      operations[] size n = 10
-# 1 97    operations = ['1 97', '2', '1 20', ....]
+# 10      
+# 1 97    
 # 2
 # 1 20
 # 2
@@ -42,8 +42,7 @@ def getMax(operations):
         elif curr_op[0] =='2':
             stack.pop()
         elif curr_op[0]=='3':
-            if stack:
-                print(max(stack))
+            print(max(stack))
         
             
         
