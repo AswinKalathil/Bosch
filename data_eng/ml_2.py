@@ -15,7 +15,7 @@ cust = pd.read_csv("Ecommerce Customers.csv")
 print(cust.head())
  
 print("No of Rows =" , cust.shape)
-'''
+
 sns.jointplot(x='Time on Website',y='Yearly Amount Spent', data=cust)
 plt.show()
  
@@ -25,7 +25,7 @@ plt.show()
  
 sns.pairplot(data=cust)
 plt.show()
-'''
+
  
 sns.jointplot(x='Length of Membership',y='Yearly Amount Spent',data=cust)
 plt.show()
