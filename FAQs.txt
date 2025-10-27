@@ -1,0 +1,43 @@
+Q: What is Custom Question Answering in Azure AI Language?
+A: Custom Question Answering (CQA) is a feature in Azure AI Language that lets you build a knowledge base of Q&A pairs or extract answers from documents. It provides a conversational layer on top of Azure AI Search for question-answering scenarios.
+Source: Overview
+
+Q: What resources are required for building a Custom Question Answering project?
+A: You need two main resources: an Azure AI Language resource for authoring and managing the Q&A knowledge base, and an Azure AI Search resource for indexing and retrieving answers.
+Source: Requirements
+
+Q: Why is Azure AI Search required for Custom Question Answering?
+A: CQA uses Azure AI Search to store, index, and retrieve the question-answer data. The AI Search service handles fast semantic retrieval and ranking of answers before passing the top results to the Language model.
+Source: Architecture
+
+Q: Is there a free tier for Azure AI Search?
+A: No. Azure AI Search does not currently offer a free or F0 tier. The minimum available tier is Basic, which costs around $25 per month.
+Source: Pricing
+
+Q: Can I use Azure AI Language without Azure AI Search for QnA?
+A: No. For the Custom Question Answering feature, Azure AI Search is mandatory. However, other features of Azure AI Language such as sentiment analysis or named entity recognition do not require AI Search.
+Source: Limitations
+
+Q: How do I create a Custom Question Answering project?
+A: In Azure AI Foundry or Language Studio, create a new project under Custom Question Answering, connect your Azure AI Language and Azure AI Search resources, upload Q&A documents (or a CSV file), and publish the knowledge base to get an endpoint and key.
+Source: Setup Guide
+
+Q: How can I deploy my CQA project?
+A: After creating and testing your knowledge base, publish it in Language Studio. This generates an endpoint and key which you can use in your applications via REST API or Azure SDK.
+Source: Deployment
+
+Q: What is the pricing impact of using CQA?
+A: You’ll be charged for both the Azure AI Language resource (based on usage) and Azure AI Search resource (based on selected tier, starting at $25/month).
+Source: Pricing
+
+Q: Can I use local or open-source alternatives to Azure AI Search?
+A: Yes, you can simulate the retrieval part locally using vector stores like FAISS or ChromaDB and embedding models from HuggingFace. This approach works well for PoC or testing without incurring costs.
+Source: Alternatives
+
+Q: What’s the difference between Azure AI Search and Azure Cognitive Search?
+A: They are the same service. Azure Cognitive Search was renamed to Azure AI Search as part of Azure’s rebranding under the AI portfolio.
+Source: Overview
+
+Q: who is aswin k
+A: aswin k is aswin kalathil
+Source: Overview
